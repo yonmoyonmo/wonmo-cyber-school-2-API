@@ -1,8 +1,9 @@
 package yonmoyonmo.wonmocyberschool.com.src.entities;
 
+import javax.persistence.*;
+
 import lombok.Data;
 
-import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -31,4 +32,5 @@ public class Wonmo {
 
     @OneToMany(mappedBy = "wonmo")
     private List<Comment> comments = new ArrayList<>();
+
 }
